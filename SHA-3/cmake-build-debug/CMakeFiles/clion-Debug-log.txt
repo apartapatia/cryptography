@@ -1,0 +1,4 @@
+"C:\Users\kogda\AppData\Local\Programs\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/kogda/AppData/Local/Programs/CLion Nova/bin/ninja/win/x64/ninja.exe" -G Ninja -S "D:\шлак учебный\крипта\SHA-3" -B "D:\шлак учебный\крипта\SHA-3\cmake-build-debug"
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/шлак учебный/крипта/SHA-3/cmake-build-debug
