@@ -48,7 +48,6 @@ void sha3_keccak_f(unsigned long long A[5][5]) {
         unsigned long long C[5];
         unsigned long long D[5];
 
-        // calculate C
         for (int x = 0; x < 5; x++) {
             C[x] = 0L;
             for (int y = 0; y < 5; y++) {
@@ -56,7 +55,6 @@ void sha3_keccak_f(unsigned long long A[5][5]) {
             }
         }
 
-        // calculate D
         for (int x = 0; x < 5; x++) {
             D[x] = C[(x + 4) % 5] ^ leftRotateLL(C[(x + 1) % 5], 1);
         }

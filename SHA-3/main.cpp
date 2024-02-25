@@ -98,7 +98,7 @@ void runExperiments(int bits, std::vector<unsigned short>& y0Values, const std::
         collisionComplexitySum += collisionComplexity;
     }
 
-    
+
     std::cout << std::dec << "Average second pre-image complexity (bits=" << bits << "): "
               << secondPreimageComplexitySum / static_cast<double>(experiments) << std::endl;
     std::cout << std::dec << "Average collision complexity (bits=" << bits << "): "
@@ -106,8 +106,8 @@ void runExperiments(int bits, std::vector<unsigned short>& y0Values, const std::
 }
 
 int main() {
-    const std::vector passwords = {"", "hahahaha", "00000000"};
-    const std::vector shaModes = {SHA3_512_STR}; // SHA3_128_STR, SHA3_256_STR, for another test
+    const std::vector passwords = {"The quick brown fox jumps over the lazy dog", "The quick brown fox jumps over the lazy dog.", "00000000"};
+    const std::vector shaModes = { SHA3_256_STR}; // SHA3_128_STR, SHA3_256_STR, for another test
 
     for (int bits = 8; bits <= 16; bits += 2) {
         std::vector<unsigned short> y0Values(passwords.size());
